@@ -11,6 +11,7 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 
 # 게임 화면 배경 이미지 불러오기
 background = pygame.image.load("../graphic/GameBG.png")
+background = pygame.transform.scale(background, (screen_width, screen_height))
 
 # 게임 루프
 def main():
